@@ -1,0 +1,12 @@
+vcom busnormal.vhd
+vcom businvbeh.vhd
+vcom transbased.vhd
+vcom grayencoder.vhd
+vcom busT0.vhd
+vlog fromsynopsys_BUSGRAY_.v
+vlog fromsynopsys_BUSINV_.v
+vlog fromsynopsys_BUSNORM_.v
+vlog fromsynopsys_BUSTRAN_.v
+vlog fromsynopsys_BUST0_.v
+vlog tb_encdec.v
+do fill_forward.scr

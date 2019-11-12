@@ -1,0 +1,2 @@
+read_ddc inccomp.ddc
+report_power -include_input_nets -net > pw.txt

@@ -1,0 +1,71 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+use IEEE.numeric_std.all;
+use work.all;
+
+entity T0encoder is
+port (	ck : in std_logic;
+	rst : in std_logic;
+	A : in std_logic_vector(7 downto 0);
+	B : out std_logic_vector(8 downto 0);
+	C : out std_logic_vector(7 downto 0));
+end T0encoder;
+
+architecture behavioral of T0encoder is
+
+signal  buss, temp, tmp, Ctmp, Ctemp: std_logic_vector(7 downto 0);
+signal Sn, Sn_c: std_logic;
+
+begin
+	tenc: process(ck,rst)
+	begin
+	  if rst='1' then
+	   buss <= (others => '0');
+		Sn <='1';
+		tmp <= (others => '0');
+		temp <= (others => '0');
+	  elsif ck'event and ck='1' then			
+			if  tmp=A then
+				buss<=temp;
+				Sn<='0';
+			else
+				buss<=A;
+				Sn<='1';
+				temp<=A;
+			end if;
+			tmp<=std_logic_vector(unsigned(A)+"00000001");	
+	  end if;
+	end process;
+
+	B(8) <= Sn;	
+	B(7 downto 0) <= buss;
+
+	tff : process(ck,rst)
+	begin
+	  if rst='1' then
+	    CTMP <= (others => '0');
+	  elsif ck'event and ck='1' then
+	  	CTMP <= buss;
+		Sn_c <= Sn;
+       end if;
+	end process;
+
+	tdec: process(rst,ck,Sn) 
+	begin
+	  if rst='1' then 
+	   Ctemp <= (others => '0');
+	  elsif ck'event and ck='1' then
+		if Sn_c='0' then
+			Ctemp<=std_logic_vector(unsigned(Ctemp)+"00000001");
+		else
+			Ctemp <= CTMP;
+		end if;
+	  end if;
+	end process;
+
+	C <= Ctemp;
+	
+
+end behavioral;
+

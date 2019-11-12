@@ -1,0 +1,21 @@
+pippo.txt			    power_reportUBUSNORM1ADDRESS.txt
+power_reportUBUSGRAY100ADDRESS.txt  power_reportUBUSNORM1DATA.txt
+power_reportUBUSGRAY100DATA.txt     power_reportUBUSNORM50ADDRESS.txt
+power_reportUBUSGRAY10ADDRESS.txt   power_reportUBUSNORM50DATA.txt
+power_reportUBUSGRAY10DATA.txt	    power_reportUBUST0100ADDRESS.txt
+power_reportUBUSGRAY1ADDRESS.txt    power_reportUBUST0100DATA.txt
+power_reportUBUSGRAY1DATA.txt	    power_reportUBUST010ADDRESS.txt
+power_reportUBUSGRAY50ADDRESS.txt   power_reportUBUST010DATA.txt
+power_reportUBUSGRAY50DATA.txt	    power_reportUBUST01ADDRESS.txt
+power_reportUBUSINV100ADDRESS.txt   power_reportUBUST01DATA.txt
+power_reportUBUSINV100DATA.txt	    power_reportUBUST050ADDRESS.txt
+power_reportUBUSINV10ADDRESS.txt    power_reportUBUST050DATA.txt
+power_reportUBUSINV10DATA.txt	    power_reportUBUSTRAN100ADDRESS.txt
+power_reportUBUSINV1ADDRESS.txt     power_reportUBUSTRAN100DATA.txt
+power_reportUBUSINV1DATA.txt	    power_reportUBUSTRAN10ADDRESS.txt
+power_reportUBUSINV50ADDRESS.txt    power_reportUBUSTRAN10DATA.txt
+power_reportUBUSINV50DATA.txt	    power_reportUBUSTRAN1ADDRESS.txt
+power_reportUBUSNORM100ADDRESS.txt  power_reportUBUSTRAN1DATA.txt
+power_reportUBUSNORM100DATA.txt     power_reportUBUSTRAN50ADDRESS.txt
+power_reportUBUSNORM10ADDRESS.txt   power_reportUBUSTRAN50DATA.txt
+power_reportUBUSNORM10DATA.txt

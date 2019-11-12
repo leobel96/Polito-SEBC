@@ -1,0 +1,19 @@
+
+Power Report Interval
+2000000 ps
+
+Power Report                        Node     Tc     Ti    Time At 1    Time At 0    Time At X
+---------------------------------------------------------------------------------------------
+                         /tb_adder/clock    200      0   1000000 ps   1000000 ps         0 ps
+                         /tb_adder/reset      2      0     20000 ps   1980000 ps         0 ps
+                        /tb_adder/sum(4)     38      0    380000 ps   1610000 ps     10000 ps
+                        /tb_adder/sum(3)     39      0    770000 ps   1220000 ps     10000 ps
+                        /tb_adder/sum(2)     78      0   1160000 ps    830000 ps     10000 ps
+                        /tb_adder/sum(1)      2      0   1960000 ps     30000 ps     10000 ps
+                        /tb_adder/sum(0)     79      0    790000 ps   1200000 ps     10000 ps
+                  /tb_adder/dut/fsm/s(3)     41      0   1200000 ps    800000 ps         0 ps
+                  /tb_adder/dut/fsm/s(2)     39      0   1230000 ps    770000 ps         0 ps
+                  /tb_adder/dut/fsm/s(1)     42      0   1190000 ps    810000 ps         0 ps
+                  /tb_adder/dut/fsm/s(0)     39      0   1170000 ps    830000 ps         0 ps
+---------------------------------------------------------------------------------------------
+

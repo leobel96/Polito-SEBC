@@ -1,0 +1,16 @@
+analyze -format vhdl inccomp.vhd
+elaborate inccomp -library work -architecture behavioral
+uniquify
+compile -exact_map
+create_clock -name ck -period 5 {ck}
+report_power -include_input_nets > log-nongated/1-pow-ng-nprob.txt
+report_power -net -include_input_nets > log-nongated/1-net-ng-nprob.txt
+set_switching_activity -static_probability 0.5 -toggle_rate 2 -base_clock ck {ck}
+set_switching_activity -static_probability 0 -base_clock ck {rst}
+report_power -include_input_nets > log-nongated/2-pow-ng-ckrst.txt
+report_power -net -include_input_nets > log-nongated/2-net-ng-ckrst.txt
+set_switching_activity -static_probability 0.12 -toggle_rate 0.025 -base_clock ck {INCA INCB}
+report_cell > log-nongated/3-cell-ng-full.txt
+report_area > log-nongated/3-area-ng-full.txt
+report_power -include_input_nets > log-nongated/3-pow-ng-full.txt
+report_power -net -include_input_nets > log-nongated/3-net-ng-full.txt

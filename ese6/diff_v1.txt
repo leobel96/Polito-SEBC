@@ -1,0 +1,16 @@
+Only in /home/lp19.16/ese6/2/v1/src/P4_1: p4_adder.vhd
+diff -ur /home/lp19.16/ese6/2/v1/src/P4_2/carry_select_block.vhd /home/lp19.16/../repository/lowpower/ese6/2/vREF/src/P4_2/carry_select_block.vhd
+--- /home/lp19.16/ese6/2/v1/src/P4_2/carry_select_block.vhd	2019-05-28 03:31:04.679000000 +0200
++++ /home/lp19.16/../repository/lowpower/ese6/2/vREF/src/P4_2/carry_select_block.vhd	2019-05-28 03:31:04.670000000 +0200
+@@ -76,8 +76,8 @@
+                   N_BIT     => N_BIT
+                 )
+     PORT MAP    (
+-                  DATA_0    => sSUM_1,
+-                  DATA_1    => sSUM_0,
++                  DATA_0    => sSUM_0,
++                  DATA_1    => sSUM_1,
+                   SEL       => C_SEL,
+                   DATA_OUT  => SUM
+                 );
+Only in /home/lp19.16/ese6/2/v1/src/P4_2: p4_adder.vhd

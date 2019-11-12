@@ -1,0 +1,14 @@
+Only in /home/lp19.16/ese6/2/v2/src/P4_1: p4_adder.vhd
+Only in /home/lp19.16/ese6/2/v2/src/P4_2: p4_adder.vhd
+diff -ur /home/lp19.16/ese6/2/v2/src/P4_2/sum_generator.vhd /home/lp19.16/../repository/lowpower/ese6/2/vREF/src/P4_2/sum_generator.vhd
+--- /home/lp19.16/ese6/2/v2/src/P4_2/sum_generator.vhd	2019-05-28 03:31:04.651000000 +0200
++++ /home/lp19.16/../repository/lowpower/ese6/2/vREF/src/P4_2/sum_generator.vhd	2019-05-28 03:31:04.672000000 +0200
+@@ -53,7 +53,7 @@
+   PORT MAP    (
+                 A     => A((N_BIT/CARRY)*CARRY-1 DOWNTO (N_BIT/CARRY-1)*CARRY),
+                 B     => B((N_BIT/CARRY)*CARRY-1 DOWNTO (N_BIT/CARRY-1)*CARRY),
+-                C_SEL => C_IN(N_BIT/CARRY-2),
++                C_SEL => C_IN(N_BIT/CARRY-1),
+                 SUM   => SUM((N_BIT/CARRY)*CARRY-1 DOWNTO (N_BIT/CARRY-1)*CARRY)
+               );
+ 

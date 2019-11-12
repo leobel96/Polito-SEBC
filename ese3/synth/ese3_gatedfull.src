@@ -1,0 +1,16 @@
+analyze -format vhdl inccomp_fullgated.vhd
+elaborate inccomp -library work -architecture behavioral
+uniquify
+compile -exact_map -gate_clock
+create_clock -name ck -period 5 {ck}
+report_power -include_input_nets > log-gated-full/1-pow-gf-nprob.txt
+report_power -net -include_input_nets > log-gated-full/1-net-gf-nprob.txt
+set_switching_activity -static_probability 0.5 -toggle_rate 2 -base_clock ck {ck}
+set_switching_activity -static_probability 0 -base_clock ck {rst}
+report_power -include_input_nets > log-gated-full/2-pow-gf-ckrst.txt
+report_power -net -include_input_nets > log-gated-full/2-net-gf-ckrst.txt
+set_switching_activity -static_probability 0.12 -toggle_rate 0.025 -base_clock ck {INCA INCB}
+report_area > log-gated-full/3-area-gf-full.txt
+report_cell > log-gated-full/3-cell-gf-full.txt
+report_power -include_input_nets > log-gated-full/3-pow-gf-full.txt
+report_power -net -include_input_nets > log-gated-full/3-net-gf-full.txt

@@ -1,0 +1,68 @@
+MAX LOAD:
+
+  RNAND      =  4.2504E-10   targ=  2.6634E-09     trig=  2.2384E-09
+  FNAND      =  3.4177E-10   targ=  1.5622E-09     trig=  1.2205E-09
+  NANDDELAY  =  2.0371E-10   targ=  1.3667E-09     trig=  1.1630E-09
+  NANDDELAY  =  2.3661E-10   targ=  2.3996E-09     trig=  2.1630E-09
+  MAXIGNDF   =  2.4547E-04     at=  1.3260E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXIVDDR   = -2.1472E-04     at=  2.3260E-09  from=  2.0000E-09     to=  3.0000E-09
+  MAXIGNDR   =  1.0965E-05     at=  2.1948E-09  from=  2.0000E-09     to=  3.0000E-09
+  MAXIVDDF   = -9.4773E-06     at=  1.1935E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXILOADF  = -2.3649E-04     at=  1.3276E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXILOADR  =  2.0627E-04     at=  2.3271E-09  from=  2.0000E-09     to=  3.0000E-09
+
+
+Print_Legend 1: VT(XNAND.XMN0.M1)
+Print_Legend 2: VT(XNAND.XMN1.M1)
+Print_Legend 3: VT(XNAND.XMP0.M1)
+Print_Legend 4: VT(XNAND.XMP1.M1)
+              1            2            3            4             
+X 
+  
+ 2.7000E+01   3.1371E-01   2.7241E-01  -2.4712E-01  -2.4712E-01  
+
+8MAX LOAD:
+
+  RNAND      =  1.1307E-10   targ=  2.2869E-09     trig=  2.1738E-09
+  FNAND      =  1.0687E-10   targ=  1.2631E-09     trig=  1.1562E-09
+  NANDDELAY  =  5.7440E-11   targ=  1.2204E-09     trig=  1.1630E-09
+  NANDDELAY  =  7.2256E-11   targ=  2.2353E-09     trig=  2.1630E-09
+  MAXIGNDF   =  1.0690E-03     at=  1.2337E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXIVDDR   = -9.2861E-04     at=  2.2384E-09  from=  2.0000E-09     to=  3.0000E-09
+  MAXIGNDR   =  2.6486E-04     at=  2.1790E-09  from=  2.0000E-09     to=  3.0000E-09
+  MAXIVDDF   = -2.5852E-04     at=  1.1766E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXILOADF  = -8.1200E-04     at=  1.2337E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXILOADR  =  7.2678E-04     at=  2.2432E-09  from=  2.0000E-09     to=  3.0000E-09
+
+
+
+Print_Legend 1: VT(XNAND.XMN0.M1)
+Print_Legend 2: VT(XNAND.XMN1.M1)
+Print_Legend 3: VT(XNAND.XMN2.M1)
+Print_Legend 4: VT(XNAND.XMN3.M1)
+              1            2            3            4             
+X 
+  
+ 2.7000E+01   3.1893E-01   2.7763E-01   3.1893E-01   2.7763E-01  
+
+Print_Legend 1: VT(XNAND.XMN4.M1)
+Print_Legend 2: VT(XNAND.XMN5.M1)
+Print_Legend 3: VT(XNAND.XMN6.M1)
+Print_Legend 4: VT(XNAND.XMN7.M1)
+              1            2            3            4             
+X 
+  
+ 2.7000E+01   2.7763E-01   3.1893E-01   2.7763E-01   3.1893E-01  
+
+
+Print_Legend 1: VT(XNAND.XMP6.M1)
+Print_Legend 2: VT(XNAND.XMP7.M1)
+              1            2             
+X 
+  
+ 2.7000E+01  -2.4164E-01  -2.4164E-01  
+Y
+  
+//VEDI FILE .chi PER LE VT DEI P-MOS 
+
+

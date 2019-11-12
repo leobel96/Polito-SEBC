@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : area
+Design : inccomp
+Version: F-2011.09-SP3
+Date   : Sun May 19 11:47:48 2019
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mg.lowpower/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:                           12
+Number of nets:                            97
+Number of cells:                           78
+Number of combinational cells:             50
+Number of sequential cells:                24
+Number of macros:                           0
+Number of buf/inv:                         16
+Number of references:                      11
+
+Combinational area:        102.410001
+Noncombinational area:     135.660004
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:           238.070005
+Total area:                 undefined
+1

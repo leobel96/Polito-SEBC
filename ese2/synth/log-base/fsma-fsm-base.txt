@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : FSM
+Design : ADDER/FSM (FSM_ADDER)
+Version: F-2011.09-SP3
+Date   : Wed Apr 10 18:06:37 2019
+****************************************
+
+
+Clock             : Unspecified
+Asynchronous Reset: Unspecified
+
+Encoding Bit Length: 3
+Encoding style     : auto
+
+State Vector: { PRES_STATE_reg[2] PRES_STATE_reg[1] PRES_STATE_reg[0] }
+
+
+State Encodings and Order: 
+
+ab         : 001
+abc        : 011
+abcd       : 111
+abcde      : 110
+abcdef     : 100
+
+
+1
